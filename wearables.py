@@ -76,7 +76,7 @@ def rr_to_hb(rr):
 	rr = rr*1000*60
 	return rr
 
-left, mid, right = st.beta_columns((4,1,4))
+left, center1 ,mid, right = st.beta_columns((4,4,1,4))
 
 # ATENCION el maximo y el minimo se invierten al pasar de RR a BPM
 maxim = math.floor(rr_to_hb(minVal.hrv_MEAN_RR))
@@ -127,8 +127,8 @@ left.markdown(
 	</center''', 
 	unsafe_allow_html=True)
 ######################################
-addSli("eda_MEAN", "Actividad electrodermica media", center)
-center.markdown(
+addSli("eda_MEAN", "Actividad electrodermica media", center1)
+center1.markdown(
 	'''<center>
 		<img src ='https://www.google.com/search?q=udenar&sxsrf=ALeKk02vGO5UVO0EYspg9vWcidyeMFgSvA:1623097721893&source=lnms&tbm=isch&sa=X&ved=2ahUKEwjPlZiZrobxAhW_GFkFHYKTDiAQ_AUoAXoECAEQAw&biw=1366&bih=635#imgrc=haIZUVdEtP9-SM = 'width : 40%;'> <br> 
 		Image by: <a href = 'https://search.creativecommons.org/photos/fc29cf47-bfc5-4ea4-832e-36d8c58b5de6'>Nikki Pugh</a>
