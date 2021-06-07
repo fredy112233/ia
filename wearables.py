@@ -2,7 +2,7 @@ import joblib
 import math
 import pandas as pd
 
-rf = joblib.load("models/QDA.pkl")  #Cargamos el QDA
+rf = joblib.load("models/rf.pkl")  #Cargamos el random forest
 
 meanVal = joblib.load("data/meanVal.pkl")  #Cargamos los valores medios
 meanVal = pd.DataFrame(meanVal)
@@ -76,7 +76,7 @@ def rr_to_hb(rr):
 	rr = rr*1000*60
 	return rr
 
-left ,mid, right = st.beta_columns((4,1,4))
+left, mid, right = st.beta_columns((4,1,4))
 
 # ATENCION el maximo y el minimo se invierten al pasar de RR a BPM
 maxim = math.floor(rr_to_hb(minVal.hrv_MEAN_RR))
@@ -126,6 +126,7 @@ left.markdown(
 		Image by: <a href = 'https://search.creativecommons.org/photos/fc29cf47-bfc5-4ea4-832e-36d8c58b5de6'>Nikki Pugh</a>
 	</center''', 
 	unsafe_allow_html=True)
+
 
 sc = ["hrv_MEAN_RR", "eda_MEAN", "baseline", "meditation", "stress", "amusement"]   #special cases
 
