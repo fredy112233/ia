@@ -126,6 +126,15 @@ left.markdown(
 		Image by: <a href = 'https://search.creativecommons.org/photos/fc29cf47-bfc5-4ea4-832e-36d8c58b5de6'>Nikki Pugh</a>
 	</center''', 
 	unsafe_allow_html=True)
+######################################
+addSli("eda_MEAN", "Actividad electrodermica media", center)
+center.markdown(
+	'''<center>
+		<img src ='https://www.google.com/search?q=udenar&sxsrf=ALeKk02vGO5UVO0EYspg9vWcidyeMFgSvA:1623097721893&source=lnms&tbm=isch&sa=X&ved=2ahUKEwjPlZiZrobxAhW_GFkFHYKTDiAQ_AUoAXoECAEQAw&biw=1366&bih=635#imgrc=haIZUVdEtP9-SM = 'width : 40%;'> <br> 
+		Image by: <a href = 'https://search.creativecommons.org/photos/fc29cf47-bfc5-4ea4-832e-36d8c58b5de6'>Nikki Pugh</a>
+	</center''', 
+	unsafe_allow_html=True)
+######################################
 
 
 sc = ["hrv_MEAN_RR", "eda_MEAN", "baseline", "meditation", "stress", "amusement"]   #special cases
